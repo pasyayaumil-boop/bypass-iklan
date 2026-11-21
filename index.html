@@ -45,6 +45,24 @@ button {
   font-size: 17px;
   margin-top: 25px;
 }
+  body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    #080000,
+    #390000,
+    #080000
+  );
+  animation: storm 4s infinite alternate;
+  z-index: -1;
+}
+
+@keyframes storm {
+  from { opacity: 0.5; }
+  to { opacity: 1; }
+}
 </style>
 </head>
 <body>
