@@ -6,5 +6,12 @@
   "display": "standalone",
   "background_color": "#08080d",
   "theme_color": "#c90020",
-  "description": "RED STORM"
+  "description": "RED STORM",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }
