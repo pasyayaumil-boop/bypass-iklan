@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
+  <link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#c90020">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>RED STORM</title>
@@ -92,4 +94,9 @@ function draw(){
 draw();
 </script>
 </body>
+  <script>
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./service-worker.js");
+}
+  </script>
 </html>
